@@ -11,7 +11,7 @@ def before_all(context):
 def before_scenario(context, scenario):
     # Setup del navegador (Antes de cada @Test)
     context.pw = sync_playwright().start()
-    context.browser = context.pw.chromium.launch(headless=True, slow_mo=500)
+    context.browser = context.pw.chromium.launch(headless=True)
     context.page = context.browser.new_page()
 
 def after_scenario(context, scenario):
