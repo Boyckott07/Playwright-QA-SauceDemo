@@ -1,0 +1,27 @@
+# Entornos Virtuales (NUNCA se suben, son pesados y específicos de tu PC)
+venv/
+ENV/
+env/
+
+# Caché de Python (Archivos temporales que genera Python al correr)
+**/__pycache__/
+*.py[cod]
+
+# Evidencias de Pruebas (No queremos llenar el server de fotos viejas)
+evidencias/
+evidence/
+*.png
+*.jpg
+*.jpeg
+
+# Reportes generados (Cada ejecución genera uno nuevo)
+*.html
+*.json
+reports/
+
+# Configuración de VS Code (Preferencias personales)
+.vscode/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
