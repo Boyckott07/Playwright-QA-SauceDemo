@@ -20,4 +20,5 @@ class LoginPage:
         return self.page.inner_text(self.error_message)
 
     def get_title_text(self):
+        self.page.wait_for_selector(self.header_title, timeout=10000)
         return self.page.inner_text(self.header_title)
