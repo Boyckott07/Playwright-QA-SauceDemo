@@ -7,10 +7,10 @@ def step_impl(context, url):
     context.login_page = LoginPage(context.page)
     context.login_page.navigate(url)
 
-@when('I enter "{user}" as username')
-def step_impl(context, user):
+@when('I enter "{userito}" as username')
+def step_impl(context, userito):
     # Usamos el atributo del objeto
-    context.page.fill(context.login_page.username_input, user)
+    context.page.fill(context.login_page.username_input, userito)
 
 @when('I enter "{password}" as password')
 def step_impl(context, password):
